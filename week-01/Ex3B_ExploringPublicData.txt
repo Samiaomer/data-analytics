@@ -1,0 +1,120 @@
+
+1. Go to the data.gov home page. What is this?
+
+Data.gov is the official open data portal of the U.S. federal government, where federal, state, local, and tribal agencies publish datasets for public access. Managed by the GSA, its purpose is to improve access to government data, drive innovation, and support transparency. Launched in 2009 with only 47 datasets, it has grown to 300,000+ datasets from over 100 organizations.
+-----------------------------------------------------
+
+2. Go to Most Viewed Datasets. How many datasets are listed?
+
+The Most Viewed Datasets section on data.gov displays 402,375 datasets.
+
+-----------------------------------------------------
+
+3. Find the Topic Category for Human Health. Review the range of data sources
+   available for this topic. Why do you think these were tagged with the Human
+   Health category?
+
+When filtering the data.gov catalog by the "Human Health" topic category, approximately
+50 datasets are listed. The data sources come from a range of organizations including:
+  - U.S. Department of Agriculture (USDA) - e.g., Food Price Outlook, Food Access
+    Research Atlas, International Food Security Assessment
+  - U.S. Department of Health & Human Services (HHS/CDC) - e.g., birth rates,
+    mortality data, drug overdose deaths
+  - U.S. Environmental Protection Agency (EPA) - e.g., air quality and environmental
+    health data
+  - Local governments (e.g., King County, WA - CDC Social Vulnerability Index)
+
+These datasets were tagged with the "Human Health" category because they all contain
+data that directly or indirectly impacts the health and well-being of people. This includes
+food prices and access (which affect nutrition), environmental quality (which affects
+physical health), and public health statistics (births, deaths, disease). Even food security
+and economic data fall under Human Health because access to affordable food is a core
+public health concern.
+
+-----------------------------------------------------
+
+4. Go to the Food Price Outlook. Review the catalog page for this dataset. How can
+   you navigate to additional datasets from the USDA?
+
+The Food Price Outlook is a USDA Economic Research Service (ERS) dataset that tracks
+and forecasts the annual percentage change in food prices using Consumer Price Index
+(CPI) and Producer Price Index (PPI) data. The catalog page on data.gov shows its
+description, publisher (USDA/ERS), license (Creative Commons CCZero - public domain),
+and access links.
+
+To navigate to additional USDA datasets from this page, you can:
+  - Click on the "Department of Agriculture" organization link on the catalog page,
+    which takes you to all USDA datasets on data.gov
+  - Use the "Datasets by Organization" feature from the data.gov home page and
+    select USDA
+  - Go directly to catalog.data.gov and filter by Organization: "usda-gov"
+  - Visit the USDA's own data portal at usda.gov or the USDA Economic Research
+    Service at ers.usda.gov/data-products
+
+-----------------------------------------------------
+
+5. Go back to the data.gov home page. This time, click on Datasets by Organization.
+
+Clicked Datasets by Organization link on the homepage.
+
+-----------------------------------------------------
+
+6. Try searching for your city, county, and state. What organizations are returned?
+
+When searching for a specific city, county, or state (e.g., "Annandale, Fairfax County,
+Virginia"), the search results typically return 111 datasets from a mix of organizations:
+  - Fairfax County, Virginia
+  - Department of Interior 
+  - U.S Census
+The results demonstrate that data.gov includes not just federal data but also state, local,
+and tribal government datasets, making it a comprehensive hub for multi-level government
+open data.
+
+-----------------------------------------------------
+
+7. Search for USDA, and click into the result. Within the USDA datasets, search for
+   "food composition." Notice that the top three results are all datasets concerning
+   nutrition information. Try searching the USDA page for "nutrition." How does
+   that affect your results?
+
+When searching "food composition" within the USDA organization page, the top results
+include datasets specifically about the chemical composition and nutrient content of foods,
+such as FoodData Central and the USDA food composition databases.
+
+When you switch the search term to "nutrition," the results broaden significantly. Instead
+of returning only datasets about the scientific composition of food, the results also include
+datasets about:
+  - Nutrition assistance programs (SNAP, school lunch programs)
+  - Food security and access
+  - Dietary surveys and health studies
+  - Community nutrition data
+
+This illustrates an important lesson in data analysis: terminology matters. "Food
+composition" is the technical/scientific term used by researchers and database
+administrators, while "nutrition" is the broader, more general term used by programs and
+policy. You may need to try multiple search terms to find the data you are actually looking
+for, as the terminology used by a data source is not always the same as the term
+you would naturally think of.
+
+-----------------------------------------------------
+
+8. Go back to the results for "food composition," and click on FoodData Central.
+   Review the catalog page for this data source, then click on the button for Visit
+   Page. Take some time to explore the FoodData Central website.
+
+FoodData Central (FDC) is USDA's comprehensive, integrated food composition data
+system managed by the Agricultural Research Service (ARS) and hosted by the National
+Agricultural Library. It consolidates multiple previously separate USDA food databases
+into one platform.
+
+  a) Try searching for "butter," or any of your favorite foods. What kind of results
+     do you get? What happens when you click on a result?
+
+  When you search for "butter" on FoodData Central (fdc.nal.usda.gov), you get multiple
+  results across different data types:
+    - Foundation Foods: detailed analytical data on butter (e.g., salted, unsalted)
+      with individual sample-level nutrient values
+    - SR Legacy: standard reference nutrient values for butter
+    - Branded Foods: hundreds of specific commercial butter products with label data
+    - Survey (FNDDS): butter as recorded in national dietary surveys
+
