@@ -1,13 +1,58 @@
 1. What do you envision yourself doing 5 minutes before class starts each day, to ensure that you are ready to start on time?
 
-Answer: Most students focus on being prepared before class by setting up their devices, checking their internet, and having materials ready. Many also log in a few minutes early and make sure tools like Zoom, camera, and microphone work. Overall, students value being organized, ready, and on time for class.
+Conclusion: Most students plan to join early, prepare their devices, and get ready to focus. Being organized is important.
+Visualization: The word cloud is helpful to see common words like “ready” and “early,” but it could be better with a chart showing exact numbers.
+Other responses: There is no “Other” option here.
+Challenges: Answers are written differently, so it is hard to group them exactly.
+Improvement: The question could include options like “log in early,” “check devices,” or “review notes” to make it easier to analyze.
 
 
 2. Do you have a second monitor connected to your computer?
 
+Conclusion: Many students selected “Other,” which may mean confusion or different setups.
+Visualization: The chart is helpful, but “Other” is unclear.
+Other responses: You can find them by clicking “View responses.” They may have different meanings.
+Challenges: “Other” responses can be hard to group because they are all different.
+Improvement: Add clearer options like “Yes,” “No,” or “Planning to get one.”
+
+
 3. Do you have an external keyboard and mouse?
+
+Conclusion: The class is almost evenly split between yes and no.
+Visualization: The chart is clear and helpful.
+Other responses: Found in the full responses; may include specific setups.
+Challenges: Small number of “Other” responses makes it harder to analyze patterns.
+Improvement: Add an option like “Laptop only” for clarity.
 
 
 4. How do you plan to take notes for this class – in a doc on your computer, with pen and paper, or something else? 
 
+Conclusion: Most students prefer pen and paper.
+Visualization: The chart is helpful and easy to understand.
+Other responses: Available in full responses, may include apps or tablets.
+Challenges: “Other” answers may vary a lot (apps, tablets, etc.).
+Improvement: Add more options like “tablet” or “note-taking app.”
+
 5. What is one question that you have right now, about this course generally or about a specific topic we’ll be talking about?
+
+Conclusion: Some students are curious about skills for future careers, but many did not answer clearly.
+Visualization: Not very helpful because answers are text.
+Other responses: Not applicable.
+Challenges: Hard to find patterns because answers are short and different.
+Improvement: Provide categories or examples to guide answers.
+
+6. Is there anything that surprised you about the survey responses?
+
+Yes, I was surprised that many students selected “Other” for some questions. It shows that the answer choices were not clear enough.
+
+7. Looking at the responses to questions 1 and 5, are there any ideas you might try to include in your morning routine, or any questions that you are also curious about?
+
+Yes, I would like to start joining class early and checking my setup before class. I am also curious about what technical skills I need to learn for my future career.
+
+8. Pretend you are the instructor. Is there anything you can learn from this survey to help in how you approach teaching this class?
+
+Yes, I can learn that many students want to be prepared and organized before class. Some students may not have extra equipment like monitors or keyboards, so I should not require advanced setups. I also see that many students prefer writing notes by hand, so I can give time for note-taking. I also learned that students are interested in learning technical skills for their future careers, so I should focus on practical and useful topics.
+
+9. Again, pretend you are the instructor. Do you think it was helpful or not helpful to make this survey anonymous? Why or why not?
+
+I think it is helpful because students can answer honestly without feeling nervous or judged. This gives more real and accurate responses. However, one disadvantage is that I cannot follow up with specific students if they need help. Overall, it is more helpful than not because honesty is important.
