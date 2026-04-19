@@ -1,0 +1,11 @@
+Id,Start_time,Completion_time,Time_to_complete,Email,Name,Order_item,Visit_frequency,Service_1,Service_2,Coffee_quality_1,Coffee_quality_2,Satisfaction
+1,4/9/2026 15:58,4/9/2026 15:59,00:57,saraya@my.yearupunited.org,saliem araya,Adeni/Karak Chai,5 times a week,Option 4,Option 4,Good,Good,3
+2,4/9/2026 16:06,4/9/2026 16:08,01:23,tzergaw@my.yearupunited.org,tihitina zergaw,Yemeni Style Coffee with Cream and Cardamom,Weekly,Option 3,,Good,,4
+3,4/9/2026 19:20,4/9/2026 19:20,00:17,locelotllopez@my.yearupunited.org,luis ocelotllopez,Yemeni Style Coffee with Cream and Cardamom,never,Option 4,Option 5,Poor,Very good,4
+4,4/9/2026 20:27,4/9/2026 20:28,01:39,achanthadara@my.yearupunited.org,alexus chanthadara,,0,Option 3,Option 3,Good,Good,3
+5,4/10/2026 3:16,4/10/2026 3:16,00:41,hmerawi@my.yearupunited.org,hana merawi,Yemeni Style Coffee with Cream and Cardamom,dalily,Option 5,Option 4,Excellent,Good,5
+6,4/10/2026 8:44,4/10/2026 8:46,01:14,BHambleton@YearUp.org,Bess Hambleton,Yemeni Style Coffee with Cream and Cardamom,maybe a few times a month?,Option 5,Option 4,Excellent,Excellent,5
+7,4/10/2026 11:55,4/10/2026 11:55,00:31,dmulugeta@my.yearupunited.org,dagmawi mulugeta,Yemeni Style Coffee with Cream and Cardamom,twice a week,Option 5,Option 5,Excellent,Excellent,5
+8,4/10/2026 11:55,4/10/2026 11:56,01:12,bcollins@my.yearupunited.org,blake collins,Yemeni Style Coffee with Cream and Cardamom,Option 5,Option 5,Option 5,Excellent,Excellent,5
+9,4/10/2026 12:00,4/10/2026 12:00,00:34,cpalacios@my.yearupunited.org,charles palacios,Yemeni Style Coffee with Cream and Cardamom,At least 2 times a week! ,Option 1,,Excellent,,5
+,,,00:56,,,7,1,4,3,5,3,5
