@@ -1,0 +1,669 @@
+
+Primary Key: CategoryID
+Parent Tables (Foreign Keys): None
+
+COLUMNS:
+
+CategoryID
+- Represents: A unique number that identifies each category
+- Values: 1, 2, 3... up to 8
+- Primary Key: YES
+- Foreign Key: NO
+- Valuable for Power BI: YES - used to link products to categories
+- Name appropriate: YES
+- Power BI Data Type: Whole Number
+- Calculations: Used for counting products per category
+
+CategoryName
+- Represents: The name of the product category (e.g. Beverages, Dairy)
+- Values: Text names like "Beverages", "Condiments", "Seafood"
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - used as a label in charts and reports
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: Used for grouping/filtering products in reports
+
+Description
+- Represents: A short description of what the category includes
+- Values: Text descriptions
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: NO - not useful for analysis, just extra info
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: None
+
+Picture
+- Represents: An image of the category
+- Values: Binary image data
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: NO - images are not useful for data analysis
+- Name appropriate: YES
+- Power BI Data Type: N/A
+- Calculations: None
+
+========================================
+TABLE: customers
+========================================
+Primary Key: CustomerID
+Parent Tables (Foreign Keys): None
+
+COLUMNS:
+
+CustomerID
+- Represents: A unique code that identifies each customer company
+- Values: 5-letter codes like "ALFKI", "ANATR"
+- Primary Key: YES
+- Foreign Key: NO
+- Valuable for Power BI: YES - links customers to orders
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: Used for counting customers, linking to orders
+
+CompanyName
+- Represents: The name of the customer's company
+- Values: Text like "Alfreds Futterkiste", "Ana Trujillo Emparedados"
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - used as a label in reports
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: Used for grouping sales by customer
+
+ContactName
+- Represents: The name of the person at the company we contact
+- Values: Text names like "Maria Anders"
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: NO - not needed for analysis
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: None
+
+ContactTitle
+- Represents: The job title of the contact person
+- Values: "Sales Manager", "Owner", etc.
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: NO - not needed for analysis
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: None
+
+Address
+- Represents: Street address of the customer
+- Values: Text addresses
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: NO - too detailed for analysis
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: None
+
+City
+- Represents: The city where the customer is located
+- Values: "Berlin", "London", "Paris", etc.
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - useful for geographic analysis
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: Count customers or sales by city
+
+Region
+- Represents: The region or state where the customer is located
+- Values: "WA", "SP", or NULL if not applicable
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - useful for geographic analysis
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: Group sales by region
+
+PostalCode
+- Represents: The postal/zip code of the customer
+- Values: "12209", "05021", etc.
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: NO - too detailed for most analysis
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: None
+
+Country
+- Represents: The country where the customer is located
+- Values: "Germany", "UK", "France", etc.
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - very useful for geographic reports
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: Total sales by country
+
+Phone
+- Represents: Customer phone number
+- Values: Text phone numbers
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: NO - not useful for analysis
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: None
+
+Fax
+- Represents: Customer fax number
+- Values: Text fax numbers
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: NO - not useful for analysis
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: None
+
+========================================
+TABLE: employees
+========================================
+Primary Key: EmployeeID
+Parent Tables (Foreign Keys): employees (ReportsTo references itself)
+
+COLUMNS:
+
+EmployeeID
+- Represents: A unique number identifying each employee
+- Values: 1, 2, 3... up to 9
+- Primary Key: YES
+- Foreign Key: NO
+- Valuable for Power BI: YES - links employees to orders and territories
+- Name appropriate: YES
+- Power BI Data Type: Whole Number
+- Calculations: Count orders per employee
+
+LastName
+- Represents: Employee's last name
+- Values: "Davolio", "Fuller", etc.
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - used as a label (combined with FirstName)
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: None
+
+FirstName
+- Represents: Employee's first name
+- Values: "Nancy", "Andrew", etc.
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - used as a label (combined with LastName)
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: None
+
+Title
+- Represents: The employee's job title
+- Values: "Sales Representative", "Vice President of Sales"
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - useful for grouping by role
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: Group sales by job title
+
+BirthDate
+- Represents: The employee's date of birth
+- Values: Dates like 1948-12-08
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: NO - not needed for sales analysis
+- Name appropriate: YES
+- Power BI Data Type: Date
+- Calculations: Could calculate employee age
+
+HireDate
+- Represents: The date the employee was hired
+- Values: Dates like 1992-05-01
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - could analyze performance by tenure
+- Name appropriate: YES
+- Power BI Data Type: Date
+- Calculations: Calculate years of service
+
+ReportsTo
+- Represents: The EmployeeID of this employee's manager
+- Values: A number referring to another EmployeeID
+- Primary Key: NO
+- Foreign Key: YES - references EmployeeID in the same table
+- Valuable for Power BI: YES - shows management hierarchy
+- Name appropriate: YES
+- Power BI Data Type: Whole Number
+- Calculations: Build org chart or hierarchy in reports
+
+Country
+- Represents: Country where the employee works
+- Values: "USA", "UK"
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - filter employees by country
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: None
+
+========================================
+TABLE: employeeterritories
+========================================
+Primary Key: EmployeeID + TerritoryID (combined)
+Parent Tables (Foreign Keys): employees, territories
+
+COLUMNS:
+
+EmployeeID
+- Represents: The ID of the employee
+- Values: Numbers 1-9
+- Primary Key: YES (part of)
+- Foreign Key: YES - references employees table
+- Valuable for Power BI: YES - links employees to territories
+- Name appropriate: YES
+- Power BI Data Type: Whole Number
+- Calculations: Count territories per employee
+
+TerritoryID
+- Represents: The ID of the territory
+- Values: Numbers like 01581, 01730
+- Primary Key: YES (part of)
+- Foreign Key: YES - references territories table
+- Valuable for Power BI: YES - links territories to employees
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: Count employees per territory
+
+========================================
+TABLE: orderdetails
+========================================
+Primary Key: OrderID + ProductID (combined)
+Parent Tables (Foreign Keys): orders, products
+
+COLUMNS:
+
+OrderID
+- Represents: The ID of the order this line item belongs to
+- Values: Numbers like 10248, 10249
+- Primary Key: YES (part of)
+- Foreign Key: YES - references orders table
+- Valuable for Power BI: YES - links order details to orders
+- Name appropriate: YES
+- Power BI Data Type: Whole Number
+- Calculations: Count line items per order
+
+ProductID
+- Represents: The ID of the product in this line item
+- Values: Numbers 1-77
+- Primary Key: YES (part of)
+- Foreign Key: YES - references products table
+- Valuable for Power BI: YES - links to product info
+- Name appropriate: YES
+- Power BI Data Type: Whole Number
+- Calculations: Count how many orders include each product
+
+UnitPrice
+- Represents: The price per unit of the product at time of order
+- Values: Decimal numbers like 14.00, 9.80
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - used to calculate revenue
+- Name appropriate: YES
+- Power BI Data Type: Decimal Number (Currency)
+- Calculations: Revenue = UnitPrice x Quantity
+
+Quantity
+- Represents: How many units of the product were ordered
+- Values: Whole numbers like 12, 10, 5
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - used to calculate total units sold
+- Name appropriate: YES
+- Power BI Data Type: Whole Number
+- Calculations: Total units sold, Revenue = UnitPrice x Quantity
+
+Discount
+- Represents: The discount applied to this line item (as a decimal)
+- Values: 0.0, 0.05, 0.10, 0.25 (meaning 0%, 5%, 10%, 25% off)
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - analyze impact of discounts on revenue
+- Name appropriate: YES
+- Power BI Data Type: Decimal Number (Percentage)
+- Calculations: Discounted Revenue = UnitPrice x Quantity x (1 - Discount)
+
+========================================
+TABLE: orders
+========================================
+Primary Key: OrderID
+Parent Tables (Foreign Keys): customers, employees, shippers
+
+COLUMNS:
+
+OrderID
+- Represents: A unique number identifying each order
+- Values: Numbers starting at 10248
+- Primary Key: YES
+- Foreign Key: NO
+- Valuable for Power BI: YES - the main key that connects to order details
+- Name appropriate: YES
+- Power BI Data Type: Whole Number
+- Calculations: Count total number of orders
+
+CustomerID
+- Represents: Which customer placed this order
+- Values: 5-letter codes like "ALFKI"
+- Primary Key: NO
+- Foreign Key: YES - references customers table
+- Valuable for Power BI: YES - links orders to customer info
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: Sales by customer
+
+EmployeeID
+- Represents: Which employee handled this order
+- Values: Numbers 1-9
+- Primary Key: NO
+- Foreign Key: YES - references employees table
+- Valuable for Power BI: YES - links orders to employee info
+- Name appropriate: YES
+- Power BI Data Type: Whole Number
+- Calculations: Sales by employee
+
+OrderDate
+- Represents: The date the order was placed
+- Values: Dates like 1996-07-04
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - very important for time-based analysis
+- Name appropriate: YES
+- Power BI Data Type: Date
+- Calculations: Sales by month, year, quarter
+
+RequiredDate
+- Represents: The date the customer needs the order delivered by
+- Values: Dates
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - analyze on-time delivery performance
+- Name appropriate: YES
+- Power BI Data Type: Date
+- Calculations: Compare to ShippedDate to find late orders
+
+ShippedDate
+- Represents: The date the order was actually shipped
+- Values: Dates (can be NULL if not yet shipped)
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - used for delivery performance analysis
+- Name appropriate: YES
+- Power BI Data Type: Date
+- Calculations: Days to ship = ShippedDate - OrderDate
+
+ShipVia
+- Represents: Which shipper was used to deliver the order
+- Values: Numbers 1, 2, or 3
+- Primary Key: NO
+- Foreign Key: YES - references shippers table
+- Valuable for Power BI: YES - analyze which shippers are used most
+- Name appropriate: Could be clearer - better name: ShipperID
+- Power BI Data Type: Whole Number
+- Calculations: Count orders by shipper
+
+Freight
+- Represents: The shipping cost for the order
+- Values: Decimal numbers like 32.38, 11.61
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - analyze shipping costs
+- Name appropriate: YES
+- Power BI Data Type: Decimal Number (Currency)
+- Calculations: Total freight cost, average freight per order
+
+ShipCountry
+- Represents: The country the order was shipped to
+- Values: "France", "Germany", "Brazil", etc.
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - geographic analysis of where orders go
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: Orders and revenue by destination country
+
+========================================
+TABLE: products
+========================================
+Primary Key: ProductID
+Parent Tables (Foreign Keys): suppliers, categories
+
+COLUMNS:
+
+ProductID
+- Represents: A unique number identifying each product
+- Values: Numbers 1-77
+- Primary Key: YES
+- Foreign Key: NO
+- Valuable for Power BI: YES - links products to order details
+- Name appropriate: YES
+- Power BI Data Type: Whole Number
+- Calculations: Count products sold
+
+ProductName
+- Represents: The name of the product
+- Values: "Chai", "Chang", "Aniseed Syrup", etc.
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - used as label in product reports
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: Sales by product name
+
+SupplierID
+- Represents: Which supplier provides this product
+- Values: Numbers 1-29
+- Primary Key: NO
+- Foreign Key: YES - references suppliers table
+- Valuable for Power BI: YES - links products to supplier info
+- Name appropriate: YES
+- Power BI Data Type: Whole Number
+- Calculations: Sales by supplier
+
+CategoryID
+- Represents: Which category this product belongs to
+- Values: Numbers 1-8
+- Primary Key: NO
+- Foreign Key: YES - references categories table
+- Valuable for Power BI: YES - links products to category info
+- Name appropriate: YES
+- Power BI Data Type: Whole Number
+- Calculations: Sales by category
+
+UnitPrice
+- Represents: The standard selling price per unit
+- Values: Decimal numbers like 18.00, 19.00
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - used for pricing analysis
+- Name appropriate: YES
+- Power BI Data Type: Decimal Number (Currency)
+- Calculations: Average product price, price comparisons
+
+UnitsInStock
+- Represents: How many units are currently in the warehouse
+- Values: Whole numbers
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - inventory analysis
+- Name appropriate: YES
+- Power BI Data Type: Whole Number
+- Calculations: Total inventory value = UnitsInStock x UnitPrice
+
+Discontinued
+- Represents: Whether the product is no longer being sold
+- Values: 0 = active, 1 = discontinued
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - filter out discontinued products
+- Name appropriate: YES
+- Power BI Data Type: True/False (Boolean)
+- Calculations: Count active vs discontinued products
+
+========================================
+TABLE: region
+========================================
+Primary Key: RegionID
+Parent Tables (Foreign Keys): None
+
+COLUMNS:
+
+RegionID
+- Represents: A unique number identifying each region
+- Values: 1, 2, 3, 4
+- Primary Key: YES
+- Foreign Key: NO
+- Valuable for Power BI: YES - links to territories
+- Name appropriate: YES
+- Power BI Data Type: Whole Number
+- Calculations: Count territories per region
+
+RegionDescription
+- Represents: The name of the region
+- Values: "Eastern", "Western", "Northern", "Southern"
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - used as label in regional reports
+- Name appropriate: Could be clearer - better name: RegionName
+- Power BI Data Type: Text
+- Calculations: Sales by region
+
+========================================
+TABLE: shippers
+========================================
+Primary Key: ShipperID
+Parent Tables (Foreign Keys): None
+
+COLUMNS:
+
+ShipperID
+- Represents: A unique number identifying each shipping company
+- Values: 1, 2, 3
+- Primary Key: YES
+- Foreign Key: NO
+- Valuable for Power BI: YES - links to orders
+- Name appropriate: YES
+- Power BI Data Type: Whole Number
+- Calculations: Count orders per shipper
+
+CompanyName
+- Represents: The name of the shipping company
+- Values: "Speedy Express", "United Package", "Federal Shipping"
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - used as label in shipper reports
+- Name appropriate: YES - though ShipperName might be clearer
+- Power BI Data Type: Text
+- Calculations: Total freight cost by shipper
+
+Phone
+- Represents: Phone number of the shipper
+- Values: Text phone numbers
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: NO - not useful for analysis
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: None
+
+========================================
+TABLE: suppliers
+========================================
+Primary Key: SupplierID
+Parent Tables (Foreign Keys): None
+
+COLUMNS:
+
+SupplierID
+- Represents: A unique number identifying each supplier
+- Values: Numbers 1-29
+- Primary Key: YES
+- Foreign Key: NO
+- Valuable for Power BI: YES - links suppliers to products
+- Name appropriate: YES
+- Power BI Data Type: Whole Number
+- Calculations: Count products per supplier
+
+CompanyName
+- Represents: The name of the supplier company
+- Values: Text like "Exotic Liquids", "New Orleans Cajun Delights"
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - used as label in supplier reports
+- Name appropriate: YES - though SupplierName might be clearer
+- Power BI Data Type: Text
+- Calculations: Sales by supplier
+
+Country
+- Represents: The country where the supplier is based
+- Values: "UK", "USA", "Japan", etc.
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - analyze where suppliers come from
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: Count suppliers by country
+
+City
+- Represents: The city where the supplier is based
+- Values: "London", "New Orleans", etc.
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: NO - city level is too detailed for most analysis
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: None
+
+========================================
+TABLE: territories
+========================================
+Primary Key: TerritoryID
+Parent Tables (Foreign Keys): region
+
+COLUMNS:
+
+TerritoryID
+- Represents: A unique code identifying each sales territory
+- Values: Numbers like 01581, 01730
+- Primary Key: YES
+- Foreign Key: NO
+- Valuable for Power BI: YES - links territories to employees
+- Name appropriate: YES
+- Power BI Data Type: Text
+- Calculations: Count employees per territory
+
+TerritoryDescription
+- Represents: The name of the territory
+- Values: "Westboro", "Bedford", "Boston", etc.
+- Primary Key: NO
+- Foreign Key: NO
+- Valuable for Power BI: YES - used as label in territory reports
+- Name appropriate: Could be clearer - better name: TerritoryName
+- Power BI Data Type: Text
+- Calculations: Sales by territory
+
+RegionID
+- Represents: Which region this territory belongs to
+- Values: Numbers 1-4
+- Primary Key: NO
+- Foreign Key: YES - references region table
+- Valuable for Power BI: YES - links territories to regions
+- Name appropriate: YES
+- Power BI Data Type: Whole Number
+- Calculations: Group territories by region
+
+========================================
+END OF NORTHWIND REVIEW NOTES
+========================================
